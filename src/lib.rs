@@ -42,7 +42,7 @@ mod tests {
 
     #[test]
     fn test_modulo_5_not_eq_five() {
-        let notexpectedexpected = "five";
+        let notexpected = "five";
         let actual = fizzbuzzer::fizzbuzzer(5);
         assert_ne!(actual, notexpected);
     }
