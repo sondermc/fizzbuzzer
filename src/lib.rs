@@ -28,9 +28,9 @@ mod tests {
 
     #[test]
     fn test_modulo_3_not_eq_three() {
-        let expected = "three";
+        let notexpected = "three";
         let actual = fizzbuzzer::fizzbuzzer(3);
-        assert_ne!(actual, expected);
+        assert_ne!(actual, notexpected);
     }
 
     #[test]
@@ -42,13 +42,13 @@ mod tests {
 
     #[test]
     fn test_modulo_5_not_eq_five() {
-        let expected = "five";
+        let notexpectedexpected = "five";
         let actual = fizzbuzzer::fizzbuzzer(5);
-        assert_ne!(actual, expected);
+        assert_ne!(actual, notexpected);
     }
 
     #[test]
-    fn test_modulo_15_eq_fifteen() {
+    fn test_modulo_15_eq_fizzbuzz() {
         let expected = "fizzbuzz";
         let actual = fizzbuzzer::fizzbuzzer(15);
         assert_eq!(actual, expected);
@@ -56,9 +56,9 @@ mod tests {
 
     #[test]
     fn test_modulo_15_not_eq_fifteen() {
-        let expected = "fifteen";
+        let notexpected = "fifteen";
         let actual = fizzbuzzer::fizzbuzzer(15);
-        assert_ne!(actual, expected);
+        assert_ne!(actual, notexpected);
     }
 }
 
