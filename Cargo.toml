@@ -9,10 +9,6 @@ repository = "https://github.com/sondermc/fizzbuzz.git"
 homepage = "https://github.com/sondermc/fizzbuzz.git"
 license     = "apache-2.0"
 
-[[bin]]
-name = "fizzbuzz"
-src = "src/main.rs"
-
 [package.metadata.rpm]
 package = "fizzbuzz"
 
