@@ -1,13 +1,23 @@
 [package]
 name = "fizzbuzz"
-authors = ["Chris Sondermeijer <chris.sondermeijer@gmail.com>", "Bart Knaack <bart.knaack@proftest.nl>"]
+authors = ["Chris Sondermeijer <chris.sondermeijer@gmail.com>"]
 version = "0.1.0"
 edition = "2021"
 description = "Test Driven Development (TDD) in action!"
 readme = "README.md"
 repository = "https://github.com/sondermc/fizzbuzz.git"
 homepage = "https://github.com/sondermc/fizzbuzz.git"
+license     = "apache-2.0"
 
 [[bin]]
 name = "fizzbuzz"
 src = "src/main.rs"
+
+[package.metadata.rpm]
+package = "fizzbuzz"
+
+[package.metadata.rpm.cargo]
+buildflags = ["--release"]
+
+[package.metadata.rpm.targets]
+fizzbuzz = { path = "/usr/bin/fizzbuzz" }
